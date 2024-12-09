@@ -1,0 +1,184 @@
+@import url(setting.css);
+
+/* h2必要なけれな消してください、使う場合はidをつけてください */
+h2 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+/* ----------------------------------------- */
+
+#history > header > .navmenu > ul > li:nth-of-type(4) {
+    background-color: var(--main_color);
+    color: #fff;
+}
+
+#history > main {
+    padding-inline: var(--padding_m);
+}
+
+#history > main > #historysection {
+    margin-bottom: 100px;
+}
+
+#history > main > #historysection > .history_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin_m);
+    margin-inline: auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+#history > main > #historysection > .history_wrapper > .history_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding_m);
+    gap: var(--margin_m);
+    border: solid 2px var(--main_color);
+    height: 300px;
+}
+
+#history
+    > main
+    > #historysection
+    > .history_wrapper
+    > .history_container
+    > .history_container_text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin_m);
+    flex-basis: 50%;
+}
+
+#history
+    > main
+    > #historysection
+    > .history_wrapper
+    > .history_container
+    > .history_container_img {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 55%;
+}
+
+#history
+    > main
+    > #historysection
+    > .history_wrapper
+    > .history_container
+    > .history_container_img
+    > .history--img {
+    flex-basis: 48%;
+    max-height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#history
+    > main
+    > #historysection
+    > .history_wrapper
+    > .history_container
+    > .history_container_img
+    > .history--img
+    > img {
+    height: 200px;
+}
+
+/* ------渦森の良さ------ */
+#history > main > #historyimgSection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--margin_m);
+    max-width: 900px;
+    margin-inline: auto;
+    margin-bottom: 100px;
+}
+
+#history > main > #historyimgSection > .history1 {
+    background: rgba(2, 190, 176, 0.3);
+    padding: calc(var(--padding_m) * 1.5) calc(var(--padding_m) * 1.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--padding_m);
+    flex-basis: 48.5%;
+    border-radius: 30px;
+}
+
+#history > main > #historyimgSection > .history1 > .history2 {
+    height: 311px;
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#history > main > #historyimgSection > .history1 > .history2 > img {
+    width: 100%;
+    height: 311px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#history > main > #historyimgSection > .history1 > h3 {
+    font-size: var(--font_l);
+}
+
+#history > main > #historyimgSection > .history1 > button {
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent_color);
+    margin-left: auto;
+    border-radius: 10px;
+    color: var(--base_cokor);
+}
+
+/* ////////////////////メディアクエリ800TAB以下///////////////////// */
+
+@media screen and (max-width: 800px) {
+    #history > main > #historysection > .history_wrapper > .history_container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #history > main > #historyimgSection > .history1 > .history2,
+    #history > main > #historyimgSection > .history1 > .history2 > img {
+        height: 250px;
+    }
+
+    #history > main > #historyimgSection > .history1 {
+        flex-basis: 70%;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #history > main > #historyimgSection > .history1 {
+        flex-basis: 100%;
+    }
+}
+
+/* ////////////////////メディアクエリ440SP以下///////////////////// */
+@media screen and (max-width: 440px) {
+    #history > main > #historysection > .history_wrapper > .history_container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #history > main > #historyimgSection > .history1 > .history2,
+    #history > main > #historyimgSection > .history1 > .history2 > img {
+        height: 230px;
+    }
+
+    #history > main > #historyimgSection > .history1 > h3 {
+        font-size: var(--font_xl);
+    }
+
+    #history main .hislesimg {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

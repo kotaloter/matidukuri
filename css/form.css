@@ -1,0 +1,411 @@
+@import url(setting.css);
+
+/* h2必要なけれな消してください、使う場合はidをつけてください */
+h2 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+/* ----------------------------------------- */
+
+/* ******************* お問い合わせ（全ページ共通/入力画面） ******************* */
+#form main,
+#form_confirmation main,
+#form_completion main {
+    padding-inline: 20px;
+}
+
+#form .wrapper,
+#form_confirmation .wrapper,
+#form_completion .wrapper {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+#form .container,
+#form_confirmation .container,
+#form_completion .container {
+    max-width: 1000px;
+    margin: 0 auto 100px;
+    background-color: #b6e2df;
+    border-radius: 30px;
+    padding: 60px 40px 100px;
+}
+
+/* /////////////// お願い文章 /////////////// */
+#form .massege,
+#form_confirmation .massege {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#form .massege p,
+#form_confirmation .massege p {
+    flex-basis: 76%;
+}
+
+#form .massege .massege_img,
+#form_confirmation .massege .massege_img,
+#form_completion .massege .massege_img {
+    flex-basis: 24%;
+}
+
+/* /////////////// 入力の進捗確認バー /////////////// */
+#form .progress,
+#form_confirmation .progress,
+#form_completion .progress {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#form .progress p,
+#form_confirmation .progress p,
+#form_completion .progress p {
+    flex-basis: calc(100% / 5);
+    background-color: #eeeeee;
+    border-radius: 10px;
+    text-align: center;
+    padding-block: 6px;
+}
+
+#form .progress p:first-child,
+#form_confirmation .progress p:nth-child(3),
+#form_completion .progress p:nth-child(5) {
+    background-color: var(--accent_color);
+    color: var(--base_cokor);
+    font-weight: bold;
+}
+
+#form .progress .dotted_line,
+#form_confirmation .progress .dotted_line,
+#form_completion .progress .dotted_line {
+    flex-basis: calc(100% / 5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* ドット3つ */
+#form .progress .dotted_line .dotted,
+#form_confirmation .dotted_line .dotted,
+#form_completion .dotted_line .dotted {
+    display: block;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: var(--base_cokor);
+}
+
+/* ドット3つ */
+#form_confirmation .dotted_line .dotted_end,
+#form_completion .dotted_line .dotted_end {
+    display: block;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: #eeeeee;
+}
+
+/* ///////////////////// 入力欄 ///////////////////// */
+#form form table,
+#form_confirmation form table {
+    width: 100%;
+}
+
+#form form table caption,
+#form_confirmation form table caption {
+    color: #ff0e00;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+#form form caption::before,
+#form_confirmation form caption::before {
+    content: "＊";
+    top: 0;
+    left: 0;
+}
+
+#form form,
+#form_confirmation form {
+    margin-top: 100px;
+}
+
+#form form table tr,
+#form_confirmation form table tr {
+    height: 100px;
+}
+
+#form form table tr th,
+#form_confirmation form table tr th {
+    font-weight: 400;
+    padding-right: 20px;
+    width: 20%;
+}
+
+#form form table tr td,
+#form_confirmation form table tr td {
+    width: 70%;
+}
+
+#form form table tr td input,
+#form form table tr td textarea,
+#form_confirmation form table tr td input,
+#form_confirmation form table tr td textarea {
+    border: 1px solid var(--font_color);
+    background-color: var(--base_cokor);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(160, 160, 160);
+    padding: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+#form form table tr td input,
+#form_confirmation form table tr td input {
+    width: 60%;
+}
+
+#form form table tr td textarea,
+#form_confirmation form table tr td textarea {
+    width: 100%;
+}
+
+#form form table tr .massege_area textarea,
+#form_confirmation form table tr .massege_area textarea {
+    height: 300px;
+}
+
+/* ///////////////////// 確認ボタン ///////////////////// */
+#form form input[type="button"] {
+    display: block;
+    margin: 80px auto 0;
+    background-color: var(--accent_color);
+    color: var(--base_cokor);
+    padding: 10px 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(160, 160, 160);
+}
+
+/* ************************* お問い合わせ（確認画面） ************************* */
+#form_confirmation form table tr td span {
+    position: relative;
+}
+#form_confirmation form table tr td span::after {
+    content: "";
+    width: 200px;
+    height: 1px;
+    display: inline-block;
+    background-color: var(--font_color);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+#form_confirmation form table tr td > p {
+    border-bottom: 1px solid var(--font_color);
+    width: 70%;
+}
+
+#form_confirmation form table tr td textarea {
+    background-color: #b6e2df;
+    box-shadow: 0px 0px 0px rgb(160, 160, 160);
+}
+
+#form_confirmation form .button_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+/* 戻るボタン */
+#form_confirmation form .arrow_button a {
+    width: 140px;
+    height: 50px;
+    display: block;
+    background-color: var(--base_cokor);
+    color: var(--font_color);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(160, 160, 160);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#form_confirmation form .arrow_button .arrow_icon {
+    flex-basis: 20px;
+    margin-bottom: 10px;
+}
+
+/* 完了ボタン */
+#form_confirmation form .submit_button > a > span {
+    display: block;
+    background-color: var(--accent_color);
+    color: var(--base_cokor);
+    padding: 10px 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(160, 160, 160);
+}
+
+/* ************************* お問い合わせ（完了画面） ************************* */
+#form_completion main .wrapper {
+    max-width: 600px;
+}
+
+#form_completion main .massege {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* トップに戻るボタン */
+#form_completion main section a {
+    width: 220px;
+    margin: 80px auto 0;
+    padding-block: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--base_cokor);
+    background-color: var(--accent_color);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(160, 160, 160);
+}
+
+#form_completion main section a .home_icon {
+    flex-basis: 28px;
+    margin-bottom: 2px;
+}
+
+/* ボタンのhover */
+#form_confirmation form .submit_button > a > span:hover,
+#form_confirmation form .arrow_button a:hover,
+#form form input[type="button"]:hover,
+#form_completion main section a:hover {
+    box-shadow: 0 0 0;
+    transform: translateY(2px);
+}
+/* ************************************************************** */
+
+/* ************************* レスポンシブ ************************* */
+/* ////////////////// max-width: 800px ////////////////// */
+@media screen and (max-width: 800px) {
+    #form form table tr th,
+    #form form table tr td,
+    #form_confirmation form table tr th,
+    #form_confirmation form table tr td {
+        display: block;
+        width: 100%;
+    }
+
+    #form_confirmation form table tr td > p {
+        border-bottom: 1px solid var(--font_color);
+        text-align: center;
+        width: 70%;
+    }
+
+    #form form table tr .massege_area textarea,
+    #form_confirmation form table tr .massege_area textarea {
+        height: 200px;
+    }
+}
+/* ////////////////////////////////////////////////////// */
+/* ////////////////// max-width: 600px ////////////////// */
+@media screen and (max-width: 600px) {
+    #form .massege,
+    #form_confirmation .massege {
+        flex-direction: column;
+    }
+
+    #form .massege .massege_img,
+    #form_confirmation .massege .massege_img {
+        width: 120px;
+        margin-left: auto;
+    }
+
+    #form .progress p,
+    #form_confirmation .progress p,
+    #form_completion .progress p {
+        flex-basis: calc((100% / 4));
+    }
+
+    #form .progress .dotted_line,
+    #form_confirmation .progress .dotted_line,
+    #form_completion .progress .dotted_line {
+        flex-basis: calc(100% / 10);
+    }
+}
+/* ////////////////// max-width: 440px ////////////////// */
+@media screen and (max-width: 440px) {
+    #form .container,
+    #form_confirmation .container,
+    #form_completion .container {
+        border-radius: 20px;
+        padding: 40px 16px 80px;
+    }
+
+    #form form {
+        margin-top: 60px;
+    }
+
+    #form .progress {
+        margin-top: 10px;
+    }
+
+    #form_completion main .massege {
+        flex-direction: column;
+    }
+
+    #form_completion .massege .massege_img {
+        width: 120px;
+        margin-inline: auto;
+    }
+
+    #form .progress p,
+    #form_confirmation .progress p,
+    #form_completion .progress p {
+        border-radius: 5px;
+    }
+
+    #form form table caption {
+        margin-bottom: 20px;
+    }
+
+    #form form input[type="button"] {
+        margin: 50px auto 0;
+        padding: 6px 30px;
+        border-radius: 5px;
+    }
+
+    /* 戻るボタン */
+    #form_confirmation form .arrow_button a {
+        width: 100px;
+        height: 36px;
+        border-radius: 5px;
+    }
+
+    /* 完了ボタン */
+    #form_confirmation form .submit_button input[type="submit"] {
+        padding: 6px 34px;
+        border-radius: 5px;
+    }
+
+    /* トップに戻るボタン */
+    #form_completion main section a {
+        width: 188px;
+        margin: 80px auto 0;
+        padding-block: 6px;
+        border-radius: 5px;
+        gap: 0.2rem;
+    }
+
+    #form_completion main section a .home_icon {
+        flex-basis: 20px;
+        margin-bottom: 4px;
+    }
+}

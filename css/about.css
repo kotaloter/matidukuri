@@ -1,0 +1,350 @@
+@import url(setting.css);
+
+/* h2必要なけれな消してください、使う場合はidをつけてください */
+#about > main > h2 {
+    margin-top: var(--margin_l);
+    margin-bottom: 40px;
+}
+
+/* ----------------------------------------- */
+#about > main {
+    padding-inline: var(--padding_m);
+    max-width: 900px;
+    margin-inline: auto;
+}
+
+#about > header > nav > ul > li:nth-child(3) {
+    color: #fff;
+    background-color: var(--main_color);
+}
+/* ----------　まちづくり協議会とは ----------　*/
+
+#about > main > .about_top {
+    margin-top: 60px;
+}
+
+#about > main > .about_top > .textbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 830px;
+    margin-top: 40px;
+    border-radius: 50px;
+    padding: 50px 40px;
+    position: relative;
+    background: rgba(2, 190, 176, 0.3);
+}
+
+#about > main > .about_top > .textbox p {
+    max-width: 750px;
+    line-height: 200%;
+}
+
+#about > main > .about_top > .textbox > .aboutTOP_image {
+    width: 150px;
+    position: absolute;
+    bottom: -30%;
+    right: 1%;
+}
+/* ----------　まちづくり協議会とは ----------　*/
+
+/* ----------　各会長と役員様ご紹介 ----------　*/
+#about > main > #about_middle {
+    margin-top: 178px;
+}
+
+#about > main > #about_middle > .contentsWrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+    align-items: center;
+    margin-top: 64px;
+    padding-bottom: 110px;
+    padding-inline: 16px;
+    border-bottom: 1px solid #b5b5b5;
+    gap: 85px;
+}
+
+#about > main > #about_middle > .contentsWrap:nth-of-type(3) {
+    padding-bottom: 14px;
+}
+
+#about > main > #about_middle > .contentsWrap > .contentsbox01 {
+    text-align: center;
+    flex-basis: 30%;
+}
+
+#about > main > #about_middle > .contentsWrap > .contentsbox01 > .box01_image {
+    max-width: 220px;
+    margin-inline: auto;
+}
+
+#about > main > #about_middle > .contentsWrap > .contentsbox01 > ul {
+    margin-top: 18px;
+}
+
+#about > main > #about_middle > .contentsWrap > .contentsbox01 > ul > li {
+    line-height: 200%;
+}
+
+#about > main > #about_middle > .contentsWrap > .textbox01 {
+    max-width: 697px;
+    flex-basis: 65%;
+}
+
+#about > main > #about_middle > .contentsWrap > .textbox01 > p {
+    line-height: 200%;
+}
+
+#about > main > #about_middle > .contentsWrap2 > .button00 a button {
+    display: block;
+    margin-top: 16px;
+    margin-left: auto;
+    padding: 10px;
+    background-color: var(--accent_color);
+    border: none;
+    border-radius: 10px;
+    color: var(--base_cokor);
+}
+
+#about > main > #about_middle > .contentsWrap2 {
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    padding-inline: 16px;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+#about > main > #about_middle > .contentsWrap2 > .contentsbox01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about
+    > main
+    > #about_middle
+    > .contentsWrap2
+    > .contentsbox01
+    > p:nth-child(1) {
+    flex-basis: 30%;
+}
+
+#about
+    > main
+    > #about_middle
+    > .contentsWrap2
+    > .contentsbox01
+    > p:nth-child(2) {
+    flex-basis: 65%;
+}
+/* ----------　各会長と役員様ご紹介 ----------　*/
+
+/* ----------　活動内容 ----------　*/
+#about > main > #about_bottom {
+    margin-top: 160px;
+}
+
+#about > main > #about_bottom > .itemWrap {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--margin_m);
+    margin-top: 40px;
+}
+
+#about > main > #about_bottom > .itemWrap > .item {
+    background: rgba(2, 190, 176, 0.3);
+    border-radius: 30px;
+    max-width: 502px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+}
+
+#about > main > #about_bottom > .itemWrap > .item > p {
+    line-height: 200%;
+}
+
+#about > main > #about_bottom > .itemWrap > .item > .item_image {
+    max-width: 445px;
+    margin-inline: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    max-height: 250px;
+}
+
+#about > main > #about_bottom > .itemWrap > .item > .about_h3title {
+    text-align: center;
+    font-size: var(--font_l);
+    margin-top: var(--margin_s);
+    margin-bottom: var(--margin_m);
+    padding-bottom: var(--margin_s);
+    border-bottom: dotted 1px var(--font_color);
+}
+
+#about > main > #about_bottom > .itemWrap > .item a {
+    align-self: flex-end;
+    margin: 25px 10px 0 10px;
+    padding: 10px 20px;
+    background-color: var(--accent_color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--base_cokor);
+}
+
+#about > main > #about_bottom > .aboutMessage > .aboutMessage_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 100px 20px;
+    margin-top: 111px;
+    border: solid 4px var(--accent_color);
+}
+
+#about > main > #about_bottom > .aboutMessage > .aboutMessage_text p {
+    max-width: 650px;
+    line-height: 200%;
+    font-size: var(--font_l);
+}
+
+#about > main > #about_bottom > .aboutMessage > .aboutMessage_image {
+    max-width: 546px;
+    margin: 61px auto;
+}
+/* ----------　活動内容 ----------　*/
+
+/* ========== メディアクエリ(max-width: 800px)　==========　*/
+@media screen and (max-width: 800px) {
+    #about > main > #about_bottom > .aboutMessage > .aboutMessage_image {
+        max-width: 350px;
+    }
+
+    #about > main > #about_bottom > .aboutMessage > .aboutMessage_text {
+        padding: 60px 30px;
+    }
+
+    #about > main > #about_bottom > .itemWrap {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* ========== メディアクエリ(max-width: 600px)　==========　*/
+
+@media screen and (max-width: 600px) {
+    #about > main > #about_middle > .contentsWrap,
+    #about > main > #about_middle > .contentsWrap2 > .contentsbox01 {
+        flex-direction: column;
+        padding-bottom: 40px;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    #about > main > #about_middle > .contentsWrap2 > .contentsbox01 {
+        padding-bottom: 0;
+    }
+}
+
+/* ========== メディアクエリ(max-width: 440px)　==========　*/
+@media screen and (max-width: 440px) {
+    /* ----------　まちづくり協議会とは ----------　*/
+    #about > main > .about_top > .textbox {
+        border-radius: 20px;
+        position: relative;
+    }
+    #about > main > .about_top > .textbox > .aboutTOP_image {
+        max-width: 120px;
+        position: absolute;
+        bottom: -15%;
+        right: 1%;
+    }
+    /* ----------　まちづくり協議会とは ----------　*/
+
+    /* ----------　各会長と役員様ご紹介 ----------　*/
+
+    #about > main > #about_middle > .contentsWrap {
+        margin-top: 32px;
+    }
+
+    #about
+        > main
+        > #about_middle
+        > .contentsWrap:nth-of-type(3)
+        > .contentsbox01 {
+        text-align: start;
+    }
+
+    #about
+        > main
+        > #about_middle
+        > .contentsWrap
+        > .contentsbox01
+        > .box01_image {
+        max-width: 185px;
+    }
+
+    #about > main > #about_middle > .contentsWrap > .textbox01 {
+        margin-top: var(--margin_m);
+    }
+    /* ----------　各会長と役員様ご紹介 ----------　*/
+
+    /* ----------　活動内容 ----------　*/
+    #about > main > #about_bottom {
+        margin-top: 96px;
+    }
+
+    #about > main > #about_bottom > .itemWrap {
+        gap: 30px;
+    }
+
+    #about > main > #about_bottom > .itemWrap > .item {
+        overflow: hidden;
+        max-width: 360px;
+        border-radius: 20px;
+    }
+
+    #about > main > #about_bottom > .itemWrap > .item > .item_image {
+        max-width: 328px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    #about > main > #about_bottom > .itemWrap > .item > .about_h3title {
+        font-size: var(--font_xl);
+    }
+
+    #about > main > #about_bottom > .itemWrap > .item a {
+        align-self: flex-end;
+        margin: 2px;
+        padding: 6px 10px;
+        background-color: var(--accent_color);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    #about > main > #about_bottom > .aboutMessage > .aboutMessage_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 30px 20px;
+        margin-top: 60px;
+        border: solid 4px var(--accent_color);
+    }
+
+    #about > main > #about_bottom > .aboutMessage > .aboutMessage_image {
+        max-width: 250px;
+        margin: 30px auto;
+    }
+    /* ----------　活動内容 ----------　*/
+}
+
+/* ========== メディアクエリ(max-width: 440px)　==========　*/
